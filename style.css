@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 10px;
+  background: url('./sounds/background.jpg');
+  background-size: cover;
+}
+
+.layer {
+  background-color: whitesmoke;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+.keys {
+  height: 500px;
+  width: 500px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.key {
+  height: 6rem;
+  width: 6rem;
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-shadow: 0 0 0.2rem black;
+  transition: all 0.2s ease;
+}
+
+.playing {
+  transform: scale(1.2);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 2.5rem;
+}
+
+.sound {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffc600;
+}
